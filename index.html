@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <style>
+      /* font-family: 'Barlow Semi Condensed', sans-serif; */
+      body
+      {
+        background-color: hsl(210, 46%, 95%);
+      }
+      .gridcontainer {
+        display: grid;
+        place-content: center;
+        height: 100vh;
+        gap: 20px;
+        grid-template-areas:
+          "daniel daniel daniel jonathan kira"
+          "jeanette patrick patrick patrick kira ";
+        margin: 0px 200px;
+        font-family: "Barlow Semi Condensed", sans-serif;
+      }
+      .gridcontainer__daniel {
+        background-color: hsl(263, 55%, 52%);
+        grid-area: daniel;
+        color: white;
+        background-image: url("images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position: right 0px;
+      }
+      .gridcontainer__daniel img {
+        border: 2px solid hsl(263, 100%, 76%);
+      }
+      .gridcontainer__patrick img {
+        border: 2px solid hsl(263, 55%, 52%);
+      }
+      .gridcontainer__jonathan {
+        background-color: hsl(217, 19%, 35%);
+        grid-area: jonathan;
+        color: white;
+      }
+      .gridcontainer__jeanette {
+        background-color: hsl(0, 0%, 100%);
+        grid-area: jeanette;
+      }
+      .gridcontainer__patrick {
+        background-color: hsl(219, 29%, 14%);
+        grid-area: patrick;
+        color: white;
+      }
+      .gridcontainer__kira {
+        background-color: hsl(0, 0%, 100%);
+        grid-area: kira;
+      }
+
+      .gr img {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: inline;
+      }
+    
+      .gr {
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .head
+      {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0px;
+        padding: 0px;
+      }
+      .headtext
+      {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+        padding: 0px;
+      }
+      .headtext h4
+      {
+        margin: 0px;
+        padding: 0px;
+        font-weight: 500;
+        opacity: 0.9;
+      }
+      .headtext h6
+      {
+        margin: 0px;
+        padding: 0px;
+        font-weight: 500;
+        opacity: 50%;
+      }
+      .bodyh
+      {
+        margin-top: 10px;
+        font-size: 21px;
+        font-weight: 500px;
+        opacity: 90%;
+      }
+      .bodyp
+      {
+        font-size: 13px;
+        font-weight: 100px;
+        opacity: 0.5;
+        margin-top: 20px;
+      }
+      @media screen and (max-width:1250px) {
+        .head h4
+        {
+          font-size: 13px;
+        }
+        .head h6
+        {
+          font-size:8px ;        
+        }
+        .bodyh
+        {
+          font-size: 16px;
+        }
+        .bodyp{
+          font-size: 10px;
+        }}
+        @media screen and (max-width:1050px) {
+    
+        .head h4
+        {
+          font-size: 11px;
+        }
+        .head h6
+        {
+          font-size:6px ;        
+        }
+        .bodyh
+        {
+          font-size: 14px;
+        }
+        .bodyp{
+          font-size: 8px;
+        }}
+        @media screen and (max-width:500px) {
+        body {
+          background-color: green;
+        }
+      
+      .gridcontainer
+      {
+        display: flex;
+        flex-direction: column;
+        margin-top: 260px;
+        align-items: center;
+        justify-content: center;
+      }
+      .gr
+      {
+        width:400px;
+        height: auto;
+        justify-items: flex-start;
+       
+      }
+      .head h4
+        {
+          font-size: 20px;
+        }
+        .head h6
+        {
+          font-size:10px ;        
+        }
+        .bodyh
+        {
+          font-size: 18px;
+        }
+        .bodyp{
+          font-size: 12px;
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="gridcontainer">
+      <div class="gr gridcontainer__daniel">
+        <div class="head">
+        <img src="images/image-daniel.jpg" />
+        <div class="headtext">
+        <h4>Daniel Clifford</h4>
+        <h6>Verified Graduate</h6>
+      </div>
+    </div>
+    <div class="body">
+    <div class="bodyh">
+        I received a job offer mid-course, and the subjects I learned were
+        current, if not more so, in the company I joined. I honestly feel I got
+        every penny’s worth.
+        </div>
+        <div class="bodyp">
+        “ I was an EMT for many years before I joined the
+        bootcamp. I’ve been looking to make a transition and have heard some
+        people who had an amazing experience here. I signed up for the free
+        intro course and found it incredibly fun! I enrolled shortly thereafter.
+        The next 12 weeks was the best - and most grueling - time of my life.
+        Since completing the course, I’ve successfully switched careers, working
+        as a Software Engineer at a VR startup. ”
+      </div>
+      </div>
+      </div>
+      <div class="gr gridcontainer__jonathan">
+        <div class="head">
+        <img src="images/image-jonathan.jpg" />
+        <div class="headtext">
+        <h4>Jonathan Walters</h4>
+        <h6>Verified Graduate</h6>
+      </div>
+    </div>
+    <div class="body">
+      <div class="bodyh">
+         The team was very supportive and kept me motivated</div>
+         <div class="bodyp">
+          “ I started as a total newbie with virtually no coding skills. I now work as
+        a mobile engineer for a big company. This was one of the best
+        investments I’ve made in myself. ”
+      </div>
+    </div>
+      </div>
+      <div class="gr gridcontainer__jeanette">
+        <div class="head">
+        <img src="images/image-jeanette.jpg" />
+        <div class="headtext">
+        <h4>Jeanette Harmon </h4>
+        <h6>Verified Graduate</h6>
+      </div>
+    </div>
+    <div class="body">
+      <div class="bodyh">
+         An overall wonderful and rewarding experience 
+        </div>
+        <div class="bodyp">
+         “ Thank you for the wonderful experience! I now have a job I
+        really enjoy, and make a good living while doing something I love. ”
+      </div>
+    </div>
+      </div>
+      <div class="gr gridcontainer__patrick">
+        <div class="head">
+        <img src="images/image-patrick.jpg" />
+        <div class="headtext">
+        <h4>Patrick Abrams</h4>
+        <h6>Verified Graduate</h6>
+      </div>
+    </div>
+    <div class="body">
+      <div class="bodyh">
+        Awesome teaching support from TAs who
+        did the bootcamp themselves. Getting guidance from them and learning
+        from their experiences was easy.</div>
+        <div class="bodyp">
+         “ The staff seem genuinely concerned
+        about my progress which I find really refreshing. The program gave me
+        the confidence necessary to be able to go out in the world and present
+        myself as a capable junior developer. The standard is above the rest.
+        You will get the personal attention you need from an incredible
+        community of smart and amazing people. ”
+      </div>
+    </div>
+  </div>
+      <div class="gr gridcontainer__kira">
+        <div class="head">
+        <img src="images/image-kira.jpg" />
+        <div class="headtext">
+        <h4>Kira Whittle</h4>
+        <h6>Verified Graduate</h6>
+      </div>
+    </div>
+    <div class="body">
+      <div class="bodyh">
+        Such a life-changing experience. Highly
+        recommended! </div>
+        <div class="bodyp">
+        “ Before joining the bootcamp, I’ve never written a line of
+        code. I needed some structure from professionals who can help me learn
+        programming step by step. I was encouraged to enroll by a former student
+        of theirs who can only say wonderful things about the program. The
+        entire curriculum and staff did not disappoint. They were very hands-on
+        and I never had to wait long for assistance. The agile team project, in
+        particular, was outstanding. It took my learning to the next level in a
+        way that no tutorial could ever have. In fact, I’ve often referred to it
+        during interviews as an example of my developent experience. It
+        certainly helped me land a job as a full-stack developer after receiving
+        multiple offers. 100% recommend! ”
+      </div>
+    </div>
+      </div>
+    </div>
+  </body>
+</html>
